@@ -28,14 +28,12 @@ input,select{width:100%;padding:13px;margin:7px 0;border:1px solid #e8c99a;borde
 .divider{font-size:20px;color:#c9a24b;letter-spacing:8px;margin:8px 0}
 .music{position:fixed;bottom:16px;right:16px;z-index:99;background:#6d1a2d;color:#fff;border:2px solid #f9e6b8;padding:13px 17px;border-radius:50px;font-size:13px;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer}
 .footer{padding:25px 15px 70px;font-size:13px;color:#999;line-height:1.8}
-/* HUBUNGI BARU - KEMAS */
 .contact-card{display:flex;align-items:center;gap:12px;background:#fff8f0;border:1px solid #f0d9b5;border-radius:16px;padding:12px 14px;margin:10px 0;text-align:left}
 .contact-card .avatar{width:48px;height:48px;min-width:48px;background:#6d1a2d;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px}
 .contact-card .info{flex:1}.contact-card .info b{color:#6d1a2d;font-size:14.5px;display:block}.contact-card .info span{font-size:13px;color:#777}
 .contact-card .btns{display:flex;flex-direction:column;gap:6px}
 .mini-btn{display:block;text-decoration:none;font-size:11px;font-weight:700;padding:7px 12px;border-radius:20px;color:#fff;text-align:center;min-width:78px}
 .wa{background:#25D366}.call{background:#4285F4}
-/* SAMPUL */
 #sampul{position:fixed;inset:0;background:linear-gradient(180deg,#6d1a2d,#3d0f1a);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;padding:20px;transition:all .8s}
 #sampul.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 #sampul .s-name{font-family:'Great Vibes',cursive;font-size:58px;line-height:1.1;margin:15px 0}
@@ -50,15 +48,17 @@ input,select{width:100%;padding:13px;margin:7px 0;border:1px solid #e8c99a;borde
 <div class="s-name">Anisah Ali<br>& Nezaam</div>
 <div style="font-size:13px;color:#f9e6b8;line-height:1.6">Dengan penuh kesyukuran,<br>kami menjemput anda ke majlis kami</div>
 <button class="s-btn" onclick="bukaKad()">💌 Buka Jemputan</button>
-<div style="font-size:11px;margin-top:15px;opacity:.7">Tekan untuk buka & dengar lagu 🎵</div>
+<div style="font-size:11px;margin-top:15px;opacity:.7">🎵 Maher Zain - Baraka Allahu Lakuma</div>
 </div>
 
-<!-- MUZIK BARU - AUDIO TERUS, BUKAN YOUTUBE -->
+<!-- MUZIK ISLAMIC - MAHER ZAIN BARAKA ALLAHU LAKUMA -->
 <audio id="lagu" loop preload="auto">
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" type="audio/mpeg">
-<source src="https://cdn.pixabay.com/audio/2023/09/19/audio_8e2b3e3c0a.mp3" type="audio/mpeg">
+<source src="https://ia800301.us.archive.org/13/items/maher-zain-baraka-allahu-lakuma/Maher%20Zain%20-%20Baraka%20Allahu%20Lakuma.mp3" type="audio/mpeg">
+<source src="https://cdn.pixabay.com/audio/2024/02/14/audio_8e2b3e3c0a.mp3" type="audio/mpeg">
 </audio>
-<button class="music" id="btnLagu" onclick="toggleLagu()">⏸️ Muzik - Pause</button>
+<!-- BACKUP YOUTUBE MAHER ZAIN - KALAU AUDIO ATAS TAK MAIN -->
+<iframe id="yt" width="1" height="1" style="position:fixed;bottom:0;left:0;opacity:0;pointer-events:none" src="https://www.youtube.com/embed?listType=search&list=Maher%20Zain%20Baraka%20Allahu%20Lakuma&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<button class="music" id="btnLagu" onclick="toggleLagu()">🎵 Maher Zain - Pause</button>
 
 <div class="topbar">✦ WALIMATUL URUS ✦ 30 . 01 . 2027 ✦ TAIPING ✦</div>
 
@@ -80,21 +80,23 @@ input,select{width:100%;padding:13px;margin:7px 0;border:1px solid #e8c99a;borde
 <select id="hadir"><option>Akan Hadir ❤️</option><option>Tidak Dapat Hadir 😢</option></select>
 <input id="pax" type="number" placeholder="Bilangan Tetamu (cth: 2)">
 <a class="btn btn2" href="#" onclick="var n=document.getElementById('nama').value;var h=document.getElementById('hadir').value;var p=document.getElementById('pax').value;window.open('https://wa.me/60178122817?text='+encodeURIComponent('Assalamualaikum, saya '+n+' - '+h+' ('+p+' orang) untuk majlis Anisah Ali & Nezaam 30 Jan 2027'));return false;">Hantar RSVP WhatsApp</a></div>
-
-<!-- HUBUNGI KAMI BARU - KEMAS -->
 <div class="box anim"><h3>📞 Hubungi Kami</h3><p style="font-size:13px">Sebarang pertanyaan, boleh hubungi:</p>
 <div class="contact-card"><div class="avatar">👨</div><div class="info"><b>Ajmel Ali</b><span>019-434 1017</span></div><div class="btns"><a class="mini-btn wa" href="https://wa.me/60194341017">WhatsApp</a><a class="mini-btn call" href="tel:+60194341017">Call</a></div></div>
 <div class="contact-card"><div class="avatar">👨</div><div class="info"><b>Azharul Ali</b><span>017-812 2817</span></div><div class="btns"><a class="mini-btn wa" href="https://wa.me/60178122817">WhatsApp</a><a class="mini-btn call" href="tel:+60178122817">Call</a></div></div>
 <div class="contact-card"><div class="avatar">👨</div><div class="info"><b>Arif</b><span>017-724 9102</span></div><div class="btns"><a class="mini-btn wa" href="https://wa.me/60177249102">WhatsApp</a><a class="mini-btn call" href="tel:+60177249102">Call</a></div></div>
 </div>
-
 <div class="box anim"><h3>💝 Doa Buat Pengantin</h3><p><i style="color:#6d1a2d">"Barakallahu laka wa baraka alaika<br>wa jama'a bainakuma fii khair"</i><br><br>Semoga Allah memberkati kamu<br>dan menghimpunkan kamu berdua dalam kebaikan.</p></div>
 <div class="box anim"><h3>🤲 Turut Mengundang</h3><p><b style="color:#6d1a2d">TUAN JAHJAH BIN MOHAMED YUNOOS<br>DAN SEISI KELUARGA</b></p></div>
 <div class="footer"><div class="divider">✦ ✦ ✦</div><b style="color:#6d1a2d">Terima Kasih</b><br>Anisah Ali Binti Ajmel Ali & Nezaam Bin Jahjahah<br>30.01.2027 • Taiping<br>Terima Kasih Kerana Sudi Hadir ❤️</div>
 <script>
-var main=false;
-function bukaKad(){document.getElementById('sampul').classList.add('hide');var a=document.getElementById('lagu');a.volume=0.8;a.play().catch(function(){});main=true;document.getElementById('btnLagu').innerHTML='⏸️ Muzik - Pause';}
-function toggleLagu(){var a=document.getElementById('lagu');var b=document.getElementById('btnLagu');if(!main){a.play();main=true;b.innerHTML='⏸️ Muzik - Pause';}else{a.pause();main=false;b.innerHTML='▶️ Muzik - Play';}}
+var main=false, ytCuba=false;
+function mainkan(){
+var a=document.getElementById('lagu');a.volume=0.9;
+var p=a.play();if(p){p.catch(function(){var f=document.getElementById('yt');f.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');});}
+setTimeout(function(){if(a.paused && !ytCuba){ytCuba=true;var f=document.getElementById('yt');f.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');}},1500);
+}
+function bukaKad(){document.getElementById('sampul').classList.add('hide');mainkan();main=true;document.getElementById('btnLagu').innerHTML='🎵 Maher Zain - Pause';}
+function toggleLagu(){var a=document.getElementById('lagu');var b=document.getElementById('btnLagu');var f=document.getElementById('yt');if(!main){mainkan();main=true;b.innerHTML='🎵 Maher Zain - Pause';}else{a.pause();f.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');main=false;b.innerHTML='▶️ Maher Zain - Play';}}
 var target=new Date("2027-01-30T19:00:00+08:00").getTime();setInterval(function(){var now=new Date().getTime();var diff=target-now;if(diff<0)diff=0;document.getElementById("d").innerHTML=Math.floor(diff/86400000);document.getElementById("h").innerHTML=Math.floor(diff%86400000/3600000);document.getElementById("m").innerHTML=Math.floor(diff%3600000/60000);document.getElementById("s").innerHTML=Math.floor(diff%60000/1000)},1000);
 </script>
 </body></html>
