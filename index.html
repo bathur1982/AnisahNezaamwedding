@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Anisah & Nezaam</title>
-<style>body{font-family:Georgia;text-align:center;background:#fdf8f2;color:#4a3b32;margin:0;padding:30px}h1{font-size:48px;color:#8a5a2b} .btn{display:inline-block;background:#8a5a2b;color:#fff;padding:14px 28px;border-radius:30px;text-decoration:none;margin-top:15px} .box{background:#fff;border:1px solid #ead9c2;border-radius:16px;padding:20px;margin:18px auto;max-width:480px}</style>
-</head><body>
+<html lang="ms"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anisah & Nezaam | 30 Januari 2027</title>
+<style>
+*{box-sizing:border-box}body{font-family:Georgia,serif;text-align:center;background:#fdf8f2;color:#4a3b32;margin:0;padding:0}
+.hero{padding:45px 20px 25px;background:linear-gradient(#f7e8d8,#fdf8f2)}
+small{letter-spacing:4px;color:#8a5a2b;font-weight:bold}h1{font-size:54px;line-height:1.1;color:#8a5a2b;margin:12px 0}
+.date{font-size:18px;background:#8a5a2b;color:#fff;display:inline-block;padding:10px 22px;border-radius:30px;margin:10px 0}
+.box{background:#fff;border:1px solid #ead9c2;border-radius:18px;padding:22px;margin:18px auto;max-width:480px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
+.btn{display:inline-block;background:#8a5a2b;color:#fff;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:10px}
+.btn2{background:#25D366}.count{display:flex;justify-content:center;gap:10px;margin-top:12px}.count div{background:#fdf8f2;border:1px solid #ead9c2;border-radius:12px;padding:10px;width:68px}.count b{font-size:22px;display:block;color:#8a5a2b}
+input,select{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:10px;font-size:15px}
+.footer{font-size:13px;color:#999;padding:20px}
+</style></head><body>
+<div class="hero">
 <small>WALIMATUL URUS</small>
 <h1>Anisah<br>&<br>Nezaam</h1>
-<p>Dengan penuh kesyukuran, kami menjemput ke majlis perkahwinan kami</p>
-<div class="box"><h3>Tarikh & Lokasi</h3><p><b>Akan Diberitahu</b><br>Kluang, Johor</p><a class="btn" href="https://maps.google.com/?q=Kluang,Johor">Google Maps</a></div>
-<div class="box"><h3>RSVP</h3><p>Tekan bawah untuk sahkan kehadiran</p><a class="btn" href="https://wa.me/60123456789?text=Saya%20akan%20hadir%20majlis%20Anisah%20%26%20Nezaam">RSVP WhatsApp</a></div>
-<p style="font-size:13px;color:#999;margin-top:25px">Anisah & Nezaam • Terima Kasih</p>
+<p>Dengan penuh kesyukuran, kami menjemput<br>Dato' / Datin / Tuan / Puan / Encik / Cik<br>ke majlis perkahwinan kami</p>
+<div class="date">Sabtu • 30 Januari 2027<br>7:00 PM - 11:30 PM</div>
+<div class="count"><div><b id="d">0</b>Hari</div><div><b id="h">0</b>Jam</div><div><b id="m">0</b>Minit</div><div><b id="s">0</b>Saat</div></div>
+</div>
+<div class="box"><h3>📍 Lokasi Majlis</h3><p><b>WEDDING HALL TAIPING</b><br>TAIPING SENTRAL MALL<br>Taiping, Perak</p><a class="btn" href="https://maps.google.com/?q=Taiping+Sentral+Mall+Taiping">📍 Buka Google Maps</a><br><br><a class="btn" style="background:#4285F4" href="https://waze.com/ul?q=Taiping%20Sentral%20Mall%20Taiping">Buka Waze</a></div>
+<div class="box"><h3>📅 Atur Cara</h3><p>7:00 PM - Ketibaan Tetamu<br>8:00 PM - Majlis Bermula<br>9:30 PM - Potong Kek & Sesi Bergambar<br>11:30 PM - Majlis Tamat</p></div>
+<div class="box"><h3>💌 RSVP</h3><p>Sila sahkan kehadiran sebelum 15 Januari 2027</p>
+<input id="nama" placeholder="Nama Penuh Anda">
+<select id="hadir"><option>Akan Hadir</option><option>Tidak Dapat Hadir</option></select>
+<input id="pax" type="number" placeholder="Bilangan Tetamu (cth: 2)">
+<a class="btn btn2" href="#" onclick="var n=document.getElementById('nama').value;var h=document.getElementById('hadir').value;var p=document.getElementById('pax').value;window.open('https://wa.me/60178122817?text='+encodeURIComponent('Assalamualaikum, saya '+n+' - '+h+' ('+p+' orang) untuk majlis Anisah & Nezaam 30 Jan 2027'));return false;">Hantar RSVP WhatsApp</a>
+<p style="font-size:13px;margin-top:10px">Atau WhatsApp terus: +60178122817</p></div>
+<div class="box"><h3>💝 Doa Buat Pengantin</h3><p><i>"Barakallahu laka wa baraka alaika wa jama'a bainakuma fii khair"</i><br>Semoga Allah memberkati kamu dan menghimpunkan kamu berdua dalam kebaikan.</p></div>
+<p class="footer">Anisah & Nezaam • 30.01.2027 • Taiping<br>Terima Kasih Kerana Sudi Hadir ❤️</p>
+<script>var target=new Date("2027-01-30T19:00:00+08:00").getTime();setInterval(function(){var now=new Date().getTime();var diff=target-now;if(diff<0)diff=0;document.getElementById("d").innerHTML=Math.floor(diff/86400000);document.getElementById("h").innerHTML=Math.floor(diff%86400000/3600000);document.getElementById("m").innerHTML=Math.floor(diff%3600000/60000);document.getElementById("s").innerHTML=Math.floor(diff%60000/1000)},1000);</script>
 </body></html>
