@@ -51,14 +51,9 @@ input,select{width:100%;padding:13px;margin:7px 0;border:1px solid #e8c99a;borde
 <div style="font-size:11px;margin-top:15px;opacity:.7">🎵 Maher Zain - Baraka Allahu Lakuma</div>
 </div>
 
-<!-- MUZIK ISLAMIC - MAHER ZAIN BARAKA ALLAHU LAKUMA -->
-<audio id="lagu" loop preload="auto">
-<source src="https://ia800301.us.archive.org/13/items/maher-zain-baraka-allahu-lakuma/Maher%20Zain%20-%20Baraka%20Allahu%20Lakuma.mp3" type="audio/mpeg">
-<source src="https://cdn.pixabay.com/audio/2024/02/14/audio_8e2b3e3c0a.mp3" type="audio/mpeg">
-</audio>
-<!-- BACKUP YOUTUBE MAHER ZAIN - KALAU AUDIO ATAS TAK MAIN -->
-<iframe id="yt" width="1" height="1" style="position:fixed;bottom:0;left:0;opacity:0;pointer-events:none" src="https://www.youtube.com/embed?listType=search&list=Maher%20Zain%20Baraka%20Allahu%20Lakuma&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<button class="music" id="btnLagu" onclick="toggleLagu()">🎵 Maher Zain - Pause</button>
+<!-- MUZIK MAHER ZAIN - ID BETUL mHpTdsBbYRM -->
+<iframe id="yt" width="320" height="180" style="position:fixed;bottom:70px;right:16px;z-index:98;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.3);display:none" src="https://www.youtube.com/embed/mHpTdsBbYRM?enablejsapi=1&autoplay=0&loop=1&playlist=mHpTdsBbYRM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<button class="music" id="btnLagu" onclick="toggleLagu()">🎵 Maher Zain - Play</button>
 
 <div class="topbar">✦ WALIMATUL URUS ✦ 30 . 01 . 2027 ✦ TAIPING ✦</div>
 
@@ -89,14 +84,9 @@ input,select{width:100%;padding:13px;margin:7px 0;border:1px solid #e8c99a;borde
 <div class="box anim"><h3>🤲 Turut Mengundang</h3><p><b style="color:#6d1a2d">TUAN JAHJAH BIN MOHAMED YUNOOS<br>DAN SEISI KELUARGA</b></p></div>
 <div class="footer"><div class="divider">✦ ✦ ✦</div><b style="color:#6d1a2d">Terima Kasih</b><br>Anisah Ali Binti Ajmel Ali & Nezaam Bin Jahjahah<br>30.01.2027 • Taiping<br>Terima Kasih Kerana Sudi Hadir ❤️</div>
 <script>
-var main=false, ytCuba=false;
-function mainkan(){
-var a=document.getElementById('lagu');a.volume=0.9;
-var p=a.play();if(p){p.catch(function(){var f=document.getElementById('yt');f.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');});}
-setTimeout(function(){if(a.paused && !ytCuba){ytCuba=true;var f=document.getElementById('yt');f.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');}},1500);
-}
-function bukaKad(){document.getElementById('sampul').classList.add('hide');mainkan();main=true;document.getElementById('btnLagu').innerHTML='🎵 Maher Zain - Pause';}
-function toggleLagu(){var a=document.getElementById('lagu');var b=document.getElementById('btnLagu');var f=document.getElementById('yt');if(!main){mainkan();main=true;b.innerHTML='🎵 Maher Zain - Pause';}else{a.pause();f.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');main=false;b.innerHTML='▶️ Maher Zain - Play';}}
+var main=false;
+function bukaKad(){document.getElementById('sampul').classList.add('hide');var f=document.getElementById('yt');f.style.display='block';f.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');main=true;document.getElementById('btnLagu').innerHTML='🎵 Maher Zain - Pause';}
+function toggleLagu(){var f=document.getElementById('yt');var b=document.getElementById('btnLagu');if(!main){f.style.display='block';f.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');main=true;b.innerHTML='🎵 Maher Zain - Pause';}else{f.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');main=false;b.innerHTML='▶️ Maher Zain - Play';}}
 var target=new Date("2027-01-30T19:00:00+08:00").getTime();setInterval(function(){var now=new Date().getTime();var diff=target-now;if(diff<0)diff=0;document.getElementById("d").innerHTML=Math.floor(diff/86400000);document.getElementById("h").innerHTML=Math.floor(diff%86400000/3600000);document.getElementById("m").innerHTML=Math.floor(diff%3600000/60000);document.getElementById("s").innerHTML=Math.floor(diff%60000/1000)},1000);
 </script>
 </body></html>
