@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="ms"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Anisah Ali & Nezaam | 30 Januari 2027</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}body{font-family:Georgia,serif;text-align:center;background:#fdf8f2;color:#4a3b32;margin:0;padding:0}
-.hero{padding:45px 20px 25px;background:linear-gradient(#f7e8d8,#fdf8f2)}
-small{letter-spacing:3px;color:#8a5a2b;font-weight:bold}h1{font-size:42px;line-height:1.2;color:#8a5a2b;margin:12px 0}
-.full{font-size:15px;color:#666;line-height:1.6}
-.parents{font-size:14px;line-height:1.7;color:#555;background:#fff;border:1px solid #ead9c2;border-radius:14px;padding:16px;margin:15px auto;max-width:480px}
-.date{font-size:17px;background:#8a5a2b;color:#fff;display:inline-block;padding:12px 22px;border-radius:30px;margin:10px 0;line-height:1.6}
-.box{background:#fff;border:1px solid #ead9c2;border-radius:18px;padding:22px;margin:18px auto;max-width:480px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
-.btn{display:inline-block;background:#8a5a2b;color:#fff;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:10px}
-.btn2{background:#25D366}.count{display:flex;justify-content:center;gap:10px;margin-top:12px}.count div{background:#fdf8f2;border:1px solid #ead9c2;border-radius:12px;padding:10px;width:68px}.count b{font-size:22px;display:block;color:#8a5a2b}
-input,select{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:10px;font-size:15px}
-.footer{font-size:13px;color:#999;padding:20px;line-height:1.7}
-.contact a{display:block;color:#8a5a2b;text-decoration:none;font-weight:bold;padding:8px;background:#fdf8f2;border-radius:10px;margin:6px 0}
-.music{position:fixed;bottom:15px;right:15px;z-index:99;background:#8a5a2b;color:#fff;border:none;padding:12px 16px;border-radius:50px;font-size:14px;box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:pointer}
+*{box-sizing:border-box}body{font-family:'Poppins',sans-serif;text-align:center;background:#fff8f0;color:#4a2c2a;margin:0}
+.topbar{background:#6d1a2d;color:#f9e6b8;padding:8px;font-size:12px;letter-spacing:3px}
+.hero{padding:35px 18px 30px;background:radial-gradient(circle at top,#fff0d6,#fdeede 60%,#fff8f0);border-bottom:3px double #c9a24b;position:relative;overflow:hidden}
+.hero:before{content:"🌸🌿🌸";position:absolute;top:8px;left:0;right:0;font-size:22px;opacity:.6}
+.script{font-family:'Great Vibes',cursive;font-size:62px;line-height:1;color:#6d1a2d;margin:10px 0 0}
+.script2{font-family:'Great Vibes',cursive;font-size:38px;color:#c9a24b;margin:-5px 0 5px}
+h2{font-family:'Playfair Display',serif;font-size:20px;letter-spacing:2px;margin:5px 0}
+.parents{background:rgba(255,255,255,.85);border:1px solid #e8c99a;border-radius:16px;padding:16px;margin:18px auto;max-width:500px;line-height:1.8;font-size:13.5px;box-shadow:0 8px 20px rgba(109,26,45,.08)}
+.parents b{color:#6d1a2d}
+.datebox{background:#6d1a2d;color:#fff;border-radius:18px;padding:16px;margin:15px auto;max-width:500px;box-shadow:0 10px 25px rgba(109,26,45,.25)}
+.datebox b{color:#f9e6b8;font-size:19px}
+.count{display:flex;justify-content:center;gap:10px;margin-top:14px}.count div{background:#fff;color:#6d1a2d;border-radius:14px;padding:12px 0;width:72px;box-shadow:0 5px 15px rgba(0,0,0,.08)}.count b{font-size:24px;display:block;font-family:'Playfair Display',serif}
+.box{background:#fff;border:1px solid #f0d9b5;border-radius:20px;padding:24px;margin:18px 12px;box-shadow:0 8px 25px rgba(0,0,0,.06);max-width:520px;margin-left:auto;margin-right:auto}
+.box h3{font-family:'Playfair Display',serif;color:#6d1a2d;font-size:21px;margin:0 0 12px}
+.box p{line-height:1.8;font-size:14.5px;color:#555}
+.btn{display:inline-block;background:#6d1a2d;color:#fff;padding:13px 26px;border-radius:30px;text-decoration:none;font-weight:600;margin:6px;font-size:14px;box-shadow:0 5px 15px rgba(109,26,45,.25)}
+.btn-gold{background:#c9a24b;color:#fff}.btn-blue{background:#4285F4}.btn2{background:#25D366}
+input,select{width:100%;padding:13px;margin:7px 0;border:1px solid #e8c99a;border-radius:12px;font-size:14px;background:#fffdf8}
+.divider{font-size:20px;color:#c9a24b;letter-spacing:8px;margin:8px 0}
+.contact a{display:block;color:#6d1a2d;text-decoration:none;font-weight:600;padding:11px;background:#fff8f0;border:1px solid #f0d9b5;border-radius:12px;margin:7px 0}
+.music{position:fixed;bottom:16px;right:16px;z-index:99;background:#6d1a2d;color:#fff;border:2px solid #f9e6b8;padding:12px 16px;border-radius:50px;font-size:13px;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer}
+.footer{padding:25px 15px 70px;font-size:13px;color:#999;line-height:1.8}
+.flower{font-size:28px}
 </style></head><body>
-<button class="music" onclick="window.open('https://www.youtube.com/results?search_query=Maher+Zain+Baraka+Allahu+Lakuma','_blank')">🎵 Maher Zain</button>
+<div class="topbar">✦ WALIMATUL URUS ✦ 30 . 01 . 2027 ✦ TAIPING ✦</div>
+<audio id="lagu" loop preload="auto"><source src="https://cdn.pixabay.com/audio/2024/05/27/audio_8e2b0e2c0a.mp3" type="audio/mpeg"></audio>
+<button class="music" id="btnLagu" onclick="var a=document.getElementById('lagu');if(a.paused){a.play();this.innerHTML='⏸️ Maher Zain - Pause'}else{a.pause();this.innerHTML='▶️ Maher Zain - Play'}">▶️ Maher Zain - Play</button>
+
 <div class="hero">
-<small>WALIMATUL URUS</small>
-<h1>Anisah Ali<br>&<br>Nezaam</h1>
-<p class="full"><b>Anisah Ali Binti Ajmel Ali</b><br>&<br><b>Nezaam Bin Jahjahah</b></p>
+<div class="flower">🌸 💐 🌸</div>
+<div style="letter-spacing:5px;font-size:11px;color:#c9a24b;font-weight:600">BISMILLAHIRRAHMANIRRAHIM</div>
+<div class="script">Anisah Ali</div>
+<div class="script2">& Nezaam</div>
+<div class="divider">✦ ── ❤️ ── ✦</div>
+<p style="font-size:14px;line-height:1.7"><b>Anisah Ali Binti Ajmel Ali</b><br>&<br><b>Nezaam Bin Jahjahah</b></p>
 <div class="parents">
-<b>AJMEL ALI BIN K.K.I. MOHAMED ALI</b><br>DAN<br><b>AYNUL ARIFFA BINTI NOORUL HAKIM</b><br>SERTA<br><b>RAHIMAH ALI BINTI K.K.I. MOHAMED ALI</b><br><br>KE MAJLIS PERKAHWINAN ANAK-ANAK KAMI
+<span style="color:#c9a24b">✦</span><br>
+<b>AJMEL ALI BIN K.K.I. MOHAMED ALI</b><br>DAN<br><b>AYNUL ARIFFA BINTI NOORUL HAKIM</b><br>SERTA<br><b>RAHIMAH ALI BINTI K.K.I. MOHAMED ALI</b><br><br>
+<span style="font-size:13px;color:#777">KE MAJLIS PERKAHWINAN<br>ANAK-ANAK KAMI</span>
 </div>
-<p>Dengan penuh kesyukuran, kami menjemput<br>Dato' / Datin / Tuan / Puan / Encik / Cik<br>ke majlis perkahwinan kami</p>
-<div class="date">PADA HARI SABTU<br>30HB JANUARI 2027<br>BERSAMAAN 22HB SYA'ABAN 1448H<br>7:00 PM - 11:30 PM</div>
+<p style="font-size:13.5px;color:#777;line-height:1.7">Dengan penuh kesyukuran & rasa syukur,<br>kami menjemput Dato' / Datin / Tuan / Puan / Encik / Cik<br>ke majlis perkahwinan kami</p>
+<div class="datebox">
+<b>PADA HARI SABTU</b><br>
+<span style="font-size:24px;font-family:'Playfair Display',serif">30HB JANUARI 2027</span><br>
+BERSAMAAN 22HB SYA'ABAN 1448H<br>
+<span style="color:#f9e6b8">⏰ 7:00 PM - 11:30 PM</span>
+</div>
 <div class="count"><div><b id="d">0</b>Hari</div><div><b id="h">0</b>Jam</div><div><b id="m">0</b>Minit</div><div><b id="s">0</b>Saat</div></div>
+<p style="font-size:12px;color:#999;margin-top:10px">Menghitung hari bahagia kami...</p>
 </div>
-<div class="box"><h3>📍 Lokasi Majlis</h3><p><b>WEDDING HALL TAIPING</b><br>TAIPING SENTRAL MALL<br>Taiping, Perak</p><a class="btn" href="https://maps.google.com/?q=Taiping+Sentral+Mall+Taiping">📍 Buka Google Maps</a><br><br><a class="btn" style="background:#4285F4" href="https://waze.com/ul?q=Taiping%20Sentral%20Mall%20Taiping">Buka Waze</a></div>
-<div class="box"><h3>📅 Atur Cara</h3><p>7:00 PM - Ketibaan Tetamu<br>8:00 PM - Majlis Bermula<br>9:30 PM - Potong Kek & Sesi Bergambar<br>11:30 PM - Majlis Tamat</p></div>
-<div class="box"><h3>💌 RSVP</h3><p>Sila sahkan kehadiran sebelum <b>5 Januari 2027</b></p>
+
+<div class="box"><div class="flower">📍</div><h3>Lokasi Majlis</h3><p><b style="color:#6d1a2d;font-size:16px">WEDDING HALL TAIPING</b><br>TAIPING SENTRAL MALL<br>Taiping, Perak</p><a class="btn" href="https://maps.google.com/?q=Taiping+Sentral+Mall+Taiping">📍 Google Maps</a><a class="btn btn-blue" href="https://waze.com/ul?q=Taiping%20Sentral%20Mall%20Taiping">🚗 Waze</a></div>
+
+<div class="box"><div class="flower">📅</div><h3>Atur Cara Majlis</h3><p style="text-align:left;max-width:320px;margin:auto">🕖 <b>7:00 PM</b> - Ketibaan Tetamu<br>🕗 <b>8:00 PM</b> - Majlis Bermula<br>🎂 <b>9:30 PM</b> - Potong Kek & Bergambar<br>🌙 <b>11:30 PM</b> - Majlis Tamat</p></div>
+
+<div class="box"><div class="flower">💌</div><h3>RSVP</h3><p>Sila sahkan kehadiran sebelum<br><b style="color:#6d1a2d">5 Januari 2027</b></p>
 <input id="nama" placeholder="Nama Penuh Anda">
-<select id="hadir"><option>Akan Hadir</option><option>Tidak Dapat Hadir</option></select>
+<select id="hadir"><option>Akan Hadir ❤️</option><option>Tidak Dapat Hadir 😢</option></select>
 <input id="pax" type="number" placeholder="Bilangan Tetamu (cth: 2)">
 <a class="btn btn2" href="#" onclick="var n=document.getElementById('nama').value;var h=document.getElementById('hadir').value;var p=document.getElementById('pax').value;window.open('https://wa.me/60178122817?text='+encodeURIComponent('Assalamualaikum, saya '+n+' - '+h+' ('+p+' orang) untuk majlis Anisah Ali & Nezaam 30 Jan 2027'));return false;">Hantar RSVP WhatsApp</a></div>
-<div class="box contact"><h3>📞 Hubungi</h3>
-<a href="https://wa.me/60194341017">1. Ajmel Ali - 019-434 1017</a>
-<a href="https://wa.me/60178122817">2. Azharul Ali - 017-812 2817</a>
-<a href="https://wa.me/60177249102">3. Arif - 017-724 9102</a>
+
+<div class="box"><div class="flower">📞</div><h3>Hubungi Kami</h3>
+<a class="contact" href="https://wa.me/60194341017" style="text-decoration:none"><span>1. Ajmel Ali - 019-434 1017</span></a>
+<a class="contact" href="https://wa.me/60178122817" style="text-decoration:none"><span>2. Azharul Ali - 017-812 2817</span></a>
+<a class="contact" href="https://wa.me/60177249102" style="text-decoration:none"><span>3. Arif - 017-724 9102</span></a>
 </div>
-<div class="box"><h3>💝 Doa Buat Pengantin</h3><p><i>"Barakallahu laka wa baraka alaika wa jama'a bainakuma fii khair"</i><br>Semoga Allah memberkati kamu dan menghimpunkan kamu berdua dalam kebaikan.</p></div>
-<div class="box"><h3>🤲 Turut Mengundang</h3><p><b>TUAN JAHJAH BIN MOHAMED YUNOOS<br>DAN SEISI KELUARGA</b></p></div>
-<p class="footer"><b>Terima Kasih</b><br>Anisah Ali Binti Ajmel Ali & Nezaam Bin Jahjahah<br>30.01.2027 • Taiping<br>Terima Kasih Kerana Sudi Hadir ❤️</p>
+
+<div class="box"><div class="flower">💝</div><h3>Doa Buat Pengantin</h3><p><i style="color:#6d1a2d">"Barakallahu laka wa baraka alaika<br>wa jama'a bainakuma fii khair"</i><br><br>Semoga Allah memberkati kamu<br>dan menghimpunkan kamu berdua dalam kebaikan.</p></div>
+
+<div class="box"><div class="flower">🤲</div><h3>Turut Mengundang</h3><p><b style="color:#6d1a2d">TUAN JAHJAH BIN MOHAMED YUNOOS<br>DAN SEISI KELUARGA</b></p></div>
+
+<div class="footer"><div class="divider">✦ ✦ ✦</div><b style="color:#6d1a2d">Terima Kasih</b><br>Anisah Ali Binti Ajmel Ali & Nezaam Bin Jahjahah<br>30.01.2027 • Taiping<br>Terima Kasih Kerana Sudi Hadir ❤️</div>
 <script>var target=new Date("2027-01-30T19:00:00+08:00").getTime();setInterval(function(){var now=new Date().getTime();var diff=target-now;if(diff<0)diff=0;document.getElementById("d").innerHTML=Math.floor(diff/86400000);document.getElementById("h").innerHTML=Math.floor(diff%86400000/3600000);document.getElementById("m").innerHTML=Math.floor(diff%3600000/60000);document.getElementById("s").innerHTML=Math.floor(diff%60000/1000)},1000);</script>
 </body></html>
