@@ -4,32 +4,44 @@
 <style>
 *{box-sizing:border-box}body{font-family:Georgia,serif;text-align:center;background:#fdf8f2;color:#4a3b32;margin:0;padding:0}
 .hero{padding:45px 20px 25px;background:linear-gradient(#f7e8d8,#fdf8f2)}
-small{letter-spacing:4px;color:#8a5a2b;font-weight:bold}h1{font-size:44px;line-height:1.2;color:#8a5a2b;margin:12px 0}
+small{letter-spacing:3px;color:#8a5a2b;font-weight:bold}h1{font-size:42px;line-height:1.2;color:#8a5a2b;margin:12px 0}
 .full{font-size:15px;color:#666;line-height:1.6}
-.date{font-size:18px;background:#8a5a2b;color:#fff;display:inline-block;padding:10px 22px;border-radius:30px;margin:10px 0}
+.parents{font-size:14px;line-height:1.7;color:#555;background:#fff;border:1px solid #ead9c2;border-radius:14px;padding:16px;margin:15px auto;max-width:480px}
+.date{font-size:17px;background:#8a5a2b;color:#fff;display:inline-block;padding:12px 22px;border-radius:30px;margin:10px 0;line-height:1.6}
 .box{background:#fff;border:1px solid #ead9c2;border-radius:18px;padding:22px;margin:18px auto;max-width:480px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
 .btn{display:inline-block;background:#8a5a2b;color:#fff;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:10px}
 .btn2{background:#25D366}.count{display:flex;justify-content:center;gap:10px;margin-top:12px}.count div{background:#fdf8f2;border:1px solid #ead9c2;border-radius:12px;padding:10px;width:68px}.count b{font-size:22px;display:block;color:#8a5a2b}
 input,select{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:10px;font-size:15px}
-.footer{font-size:13px;color:#999;padding:20px}
+.footer{font-size:13px;color:#999;padding:20px;line-height:1.7}
+.contact a{display:block;color:#8a5a2b;text-decoration:none;font-weight:bold;padding:8px;background:#fdf8f2;border-radius:10px;margin:6px 0}
+.music{position:fixed;bottom:15px;right:15px;z-index:99;background:#8a5a2b;color:#fff;border:none;padding:12px 16px;border-radius:50px;font-size:14px;box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:pointer}
 </style></head><body>
+<button class="music" onclick="window.open('https://www.youtube.com/results?search_query=Maher+Zain+Baraka+Allahu+Lakuma','_blank')">🎵 Maher Zain</button>
 <div class="hero">
 <small>WALIMATUL URUS</small>
 <h1>Anisah Ali<br>&<br>Nezaam</h1>
 <p class="full"><b>Anisah Ali Binti Ajmel Ali</b><br>&<br><b>Nezaam Bin Jahjahah</b></p>
+<div class="parents">
+<b>AJMEL ALI BIN K.K.I. MOHAMED ALI</b><br>DAN<br><b>AYNUL ARIFFA BINTI NOORUL HAKIM</b><br>SERTA<br><b>RAHIMAH ALI BINTI K.K.I. MOHAMED ALI</b><br><br>KE MAJLIS PERKAHWINAN ANAK-ANAK KAMI
+</div>
 <p>Dengan penuh kesyukuran, kami menjemput<br>Dato' / Datin / Tuan / Puan / Encik / Cik<br>ke majlis perkahwinan kami</p>
-<div class="date">Sabtu • 30 Januari 2027<br>7:00 PM - 11:30 PM</div>
+<div class="date">PADA HARI SABTU<br>30HB JANUARI 2027<br>BERSAMAAN 22HB SYA'ABAN 1448H<br>7:00 PM - 11:30 PM</div>
 <div class="count"><div><b id="d">0</b>Hari</div><div><b id="h">0</b>Jam</div><div><b id="m">0</b>Minit</div><div><b id="s">0</b>Saat</div></div>
 </div>
 <div class="box"><h3>📍 Lokasi Majlis</h3><p><b>WEDDING HALL TAIPING</b><br>TAIPING SENTRAL MALL<br>Taiping, Perak</p><a class="btn" href="https://maps.google.com/?q=Taiping+Sentral+Mall+Taiping">📍 Buka Google Maps</a><br><br><a class="btn" style="background:#4285F4" href="https://waze.com/ul?q=Taiping%20Sentral%20Mall%20Taiping">Buka Waze</a></div>
 <div class="box"><h3>📅 Atur Cara</h3><p>7:00 PM - Ketibaan Tetamu<br>8:00 PM - Majlis Bermula<br>9:30 PM - Potong Kek & Sesi Bergambar<br>11:30 PM - Majlis Tamat</p></div>
-<div class="box"><h3>💌 RSVP</h3><p>Sila sahkan kehadiran sebelum 15 Januari 2027</p>
+<div class="box"><h3>💌 RSVP</h3><p>Sila sahkan kehadiran sebelum <b>5 Januari 2027</b></p>
 <input id="nama" placeholder="Nama Penuh Anda">
 <select id="hadir"><option>Akan Hadir</option><option>Tidak Dapat Hadir</option></select>
 <input id="pax" type="number" placeholder="Bilangan Tetamu (cth: 2)">
-<a class="btn btn2" href="#" onclick="var n=document.getElementById('nama').value;var h=document.getElementById('hadir').value;var p=document.getElementById('pax').value;window.open('https://wa.me/60178122817?text='+encodeURIComponent('Assalamualaikum, saya '+n+' - '+h+' ('+p+' orang) untuk majlis Anisah Ali & Nezaam 30 Jan 2027'));return false;">Hantar RSVP WhatsApp</a>
-<p style="font-size:13px;margin-top:10px">Atau WhatsApp terus: +60178122817</p></div>
+<a class="btn btn2" href="#" onclick="var n=document.getElementById('nama').value;var h=document.getElementById('hadir').value;var p=document.getElementById('pax').value;window.open('https://wa.me/60178122817?text='+encodeURIComponent('Assalamualaikum, saya '+n+' - '+h+' ('+p+' orang) untuk majlis Anisah Ali & Nezaam 30 Jan 2027'));return false;">Hantar RSVP WhatsApp</a></div>
+<div class="box contact"><h3>📞 Hubungi</h3>
+<a href="https://wa.me/60194341017">1. Ajmel Ali - 019-434 1017</a>
+<a href="https://wa.me/60178122817">2. Azharul Ali - 017-812 2817</a>
+<a href="https://wa.me/60177249102">3. Arif - 017-724 9102</a>
+</div>
 <div class="box"><h3>💝 Doa Buat Pengantin</h3><p><i>"Barakallahu laka wa baraka alaika wa jama'a bainakuma fii khair"</i><br>Semoga Allah memberkati kamu dan menghimpunkan kamu berdua dalam kebaikan.</p></div>
-<p class="footer">Anisah Ali Binti Ajmel Ali & Nezaam Bin Jahjahah • 30.01.2027 • Taiping<br>Terima Kasih Kerana Sudi Hadir ❤️</p>
+<div class="box"><h3>🤲 Turut Mengundang</h3><p><b>TUAN JAHJAH BIN MOHAMED YUNOOS<br>DAN SEISI KELUARGA</b></p></div>
+<p class="footer"><b>Terima Kasih</b><br>Anisah Ali Binti Ajmel Ali & Nezaam Bin Jahjahah<br>30.01.2027 • Taiping<br>Terima Kasih Kerana Sudi Hadir ❤️</p>
 <script>var target=new Date("2027-01-30T19:00:00+08:00").getTime();setInterval(function(){var now=new Date().getTime();var diff=target-now;if(diff<0)diff=0;document.getElementById("d").innerHTML=Math.floor(diff/86400000);document.getElementById("h").innerHTML=Math.floor(diff%86400000/3600000);document.getElementById("m").innerHTML=Math.floor(diff%3600000/60000);document.getElementById("s").innerHTML=Math.floor(diff%60000/1000)},1000);</script>
 </body></html>
